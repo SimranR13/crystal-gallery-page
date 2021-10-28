@@ -1,43 +1,52 @@
-.navbar {
-    background: linear-gradient(to right, #FFF387, #A9FCFF);
-  }
+.navbar, .happy-acid {
+    background: linear-gradient(to right, #e0c5dc, #a9d5ff);
+}
 
-#header, #signup, #footer {
+#header, #signup, #footer, #header-gallery {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#header {
+#header, #header-gallery {
     background-image: url(./assets/blue-cloud.png);
-    height: 560px;
+    height: 570px;
     margin-bottom: 100px;
 }
 
-#header h1 {
+#header h1, #header-gallery h1 {
     top: 250px;
 }
 
-#header p {
+#header p, #header-gallery p {
     top: 300px;
 }
 
-.happy-acid {
-    background: linear-gradient(to right, rgba(168, 237, 234, 0.5), rgba(254, 214, 227, 0.5));
-}
-
-#signup {
-    background-image: url(./assets/moon.png);
-    height: 350px;
+.circle {
+    width: 150px;
+    height: 150px;
+    font-size: 0.9rem;
 }
 
 .sunny-morning {
     background: linear-gradient(to right, rgba(246, 211, 101, 0.5), rgba(253, 160, 133, 0.5))
 }
 
+#signup, #footer {
+    background-image: url(./assets/moon.png);
+    height: 350px;
+}
+
 #footer {
     background-image: url(./assets/purple-clouds.png);
-    height: 300px;
+}
+
+#header-gallery {
+    background-image: url(./assets/dark-purple-clouds.png);
+}
+
+#header-gallery h1, #header-gallery p {
+    width: 60%;
 }
 
 @media (max-width:1024px) {
@@ -45,129 +54,147 @@
         height: 420px;
     }
 
-    #header h1, #header p {
-        width: 45%;
-        text-align: center;
+    #header h1, #header-gallery h1, #meditation-practices h1, #benefits h3, #signup h1 {
+        font-size: 1.8rem;
     }
 
-    #header h1 {
-        font-size: 1.9rem;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-    }
-
-    #header p {
+    #header p, #benefits h4, #header-gallery p, #signup p {
+        font-size: 1.2rem !important;
         top: 290px;
     }
 
-    #signup {
-        padding-left: 10px !important;
+    #header-gallery h1, #header-gallery p {
+        width: 70%;
+    }
+
+    #header-gallery p {
+        font-size: 1.1rem !important;
+    }
+
+    .carousel img {
+        height: 350px !important;
     }
 }
 
 @media (max-width:768px) {
-    #header {
-        height: 310px;
+    #header, #header-gallery {
+        height: 320px;
+        margin-bottom: 40px;
     }
 
-    #header h1 {
+    #header h1, #header-gallery h1 {
         top: 190px;
-        padding: 30px 0 !important;
+        padding: 30px !important;
     }
 
-    #header p {
-        top: 220px;
-    }
-
-    #crystal-display h1 {
-        font-size: 1.6rem;
-    }
-
-    #crystal-display p {
-        font-size: 0.9rem;
-    }
-
-    #signup h1, #header h1 {
+    #signup h1, #header h1, #header-gallery h1 {
         font-size: 1.4rem !important;
     }
 
-    #signup p, #header p, #crystal-display .para {
-        font-size: 1.0rem !important;
+    #meditation-practices h1, #bubble-text h1, #blog h1 {
+        font-size: 1.7rem !important;
+    }
+
+    #header p, #header-gallery p {
+        top: 220px;
+    }
+
+    #header-gallery p, #crystal-display p, #blog p, #signup p, #header p, #footer p, #meditation-practices p, #benefits p, #bubble-text .text {
+        font-size: 0.9rem !important;
+    }
+
+    #benefits img, .carousel img {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    #blog img {
+        height: 150px;
+    }
+
+    #blog h5 {
+        font-size: 0.95rem !important;
     }
 }
 
 @media (max-width:425px) {
-    #header {
-        margin-bottom: 70px;
+    #header h1, #header p, #header-gallery h1, #header-gallery p {
+        width: 80%;
     }
 
-    #header h1, #header p {
-        width: 75%;
+    #signup h1, #header h1, #header-gallery h1 {
+        font-size: 1.2rem !important;
     }
 
-    #signup h1, #header h1 {
-        font-size: 1.3rem !important;
-    }
-
-    #header p {
+    #header p, #header-gallery p {
         top: 215px;
     }
-    
-    #crystal-display h1 {
-        font-size: 1.4rem;
+
+    #benefits img, .carousel-inner {
+        display: none;
     }
 
-    #crystal-display .para, #signup p, #header p, #footer p {
-        font-size: 0.9rem !important;
+    #blog img {
+        height: 300px;
     }
 
-    #crystal-display .para, #signup p {
-        width: 90%;
-        margin: 0 auto;
+    #meditation-practices h1, #bubble-text h1, #blog h1 {
+        font-size: 1.4rem !important;
+    }
+
+    #benefits h4 {
+        font-size: 1.0rem !important;
+    }
+
+    #meditation-practices p, #benefits p,  #benefits h4 {
+        text-align: justify;
     }
 
     #signup {
         height: 250px;
-        background-position: left;
+        background-position: initial;
     }
 
-    #signup .container {
+    #signup .container, #benefits .img-box {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #signup h1 {
-        font-size: 1.2rem;
-    }
-
-    #signup p {
+    #signup p, #meditation-practices h1 {
         text-align: center;
-        margin: 10px 0;
+        margin: 0px;
     }
 
-    #footer {
-        height: 350px;
-    }
-
-    #footer p {
+    #footer p, #signup p {
         width: 80%;
-        margin: 20px auto;
+        margin: 10px auto;
+    }
+
+    #header-gallery h1 {
+        height: 20%;
+    }
+
+    .circle {
+        width: 180px;
+        height: 180px;
     }
 }
 
 @media (max-width:375px) {
-    #header h1, #crystal-display h1, #signup h1 {
-        font-size: 1.1rem !important;
+    #blog img {
+        height: 200px;
     }
-    
-    #header p, #crystal-display p {
-        font-size: 0.9rem !important;
-    }
-}
 
-@media (max-width:320px) {
-    #header h1, #header p {
-        width: 85%;
+    #header h1, #header-gallery h1 {
+        padding: 30px 0px !important;
+    }
+
+    #meditation-practices h1, #bubble-text h1, #blog h1 {
+        font-size: 1.3rem !important;
+    }
+
+    .card img {
+        height: 200px !important;
     }
 }
